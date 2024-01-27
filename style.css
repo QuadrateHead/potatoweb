@@ -30,6 +30,8 @@ main{
     padding: 0 2px;
     color:rgb(160,101,2);
     background-color:rgb(224,188,97);   
+    transform:scale(1.1);
+    transition:90ms;
 }
 .news {
     display: flex;
