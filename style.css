@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap');
 body {
     margin:145px 0 0 0; 
-    color:rgb(160,101,2);
-    background-image:url(images/background.png);
     background-attachment:fixed;
     font-family: 'Roboto', sans-serif;
 }
@@ -21,15 +19,11 @@ main{
 }
 .anew{
     margin:20px 0;
-    padding: 0 2px;
-    color:rgb(224,188,97);
-    background-color:rgb(160,101,2);
+    padding: 0 2px;  
 }
 .anew:hover{
     margin:20px 0;
-    padding: 0 2px;
-    color:rgb(160,101,2);
-    background-color:rgb(224,188,97);   
+    padding: 0 2px;   
     transform:scale(1.1);
     transition:90ms;
 }
@@ -40,15 +34,11 @@ main{
     flex-direction: column;
     width: 175px;
     height:main;
-    text-align: center;
-    background-color:rgb(160,101,2);
-    color:rgb(224,188,97);
-    border:4px solid rgb(224,188,97);
+    text-align: center; 
 }
 h1{
     font-size:50px;
-    margin: 35px 8px 0px 0px;
-    
+    margin: 35px 8px 0px 0px; 
 }
 h2{
     font-size:30px;
@@ -69,15 +59,12 @@ ul,ol{
 a:hover{
     font-size:20px;
     font-family: 'Roboto', sans-serif;
-    text-decoration: none;
-    color:rgb(160,101,2)
+    text-decoration: none;  
 }
 a{
     font-size:20px;
     text-decoration: none;
-    color:rgb(224,188,97);
-    font-family: 'Roboto', sans-serif;
-    
+    font-family: 'Roboto', sans-serif; 
 }
 .headerfooter{
     display: flex;
@@ -87,23 +74,17 @@ a{
     padding-left: 7px;
 }   
 .article1 {
-    padding: 0 0 1px 10px;
-    color:rgb(224,188,97);
-    background-color:rgb(160,101,2);
+    padding: 0 0 1px 10px;    
 }
 .article2 {
-    padding: 0 0 1px 10px; 
-    color:rgb(160,101,2);
-    background-color:rgb(224,188,97);
+    padding: 0 0 1px 10px;   
 }
 .articleStart{
-    padding: 1px 0 1px 10px; 
-    color:rgb(224,188,97);
-    background-color:rgb(160,101,2);
+    padding: 1px 0 1px 10px;   
     font-weight:700;
 }
 nav{
-    margin: 45px 5px 0 5px; 
+    margin: 45px 0 0 5px; 
 }
 #Mail{
     padding: 8px 2px 0 3px;
@@ -129,4 +110,108 @@ nav{
 }
 .citate{
     font-size: 22px;
+}
+input{
+    border-radius: 25%;
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+input:hover{
+    border-radius: 25%;
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+.theme{
+    display: flex;
+    align-items: center;
+    margin-top:5px;
+    margin-right: 5px;
+}
+
+
+.lightTheme{
+    color:rgb(160,101,2);
+    background-image:url(images/background.png);
+}
+.lightTheme .anew{
+    color:rgb(224,188,97);
+    background-color:rgb(160,101,2);
+}
+.lightTheme .anew:hover{
+    color:rgb(160,101,2);
+    background-color:rgb(224,188,97);
+}
+.lightTheme .news{
+    background-color:rgb(160,101,2);
+    color:rgb(224,188,97);
+    border:4px solid rgb(224,188,97);
+}
+.lightTheme a{
+    color:rgb(224,188,97);
+}
+.lightTheme a:hover{
+    color:rgb(160,101,2)
+}
+.lightTheme .article1{
+    color:rgb(224,188,97);
+    background-color:rgb(160,101,2);
+}
+.lightTheme .article2{
+    color:rgb(160,101,2);
+    background-color:rgb(224,188,97);
+}
+.lightTheme .articleStart{
+    color:rgb(224,188,97);
+    background-color:rgb(160,101,2);
+}
+.lightTheme input{
+    background-color: rgb(224,188,97);
+}
+.lightTheme input:hover{
+    background-color: rgb(160,101,2);
+}
+
+
+.darkTheme{
+    color:rgb(224,188,97);
+    background-image:url(images/tile_background.png);
+}
+.darkTheme .anew{
+    color:rgb(160,101,2);
+    background-color:rgb(224,188,97);
+}
+.darkTheme .anew:hover{
+    color:rgb(224,188,97);
+    background-color:rgb(160,101,2);
+}
+.darkTheme .news{
+    background-color:rgb(224,188,97);
+    color:rgb(160,101,2);
+    border:4px solid rgb(160,101,2);
+}
+.darkTheme a{
+    color:rgb(160,101,2);
+}
+.darkTheme a:hover{   
+    color:rgb(224,188,97);
+}
+.darkTheme .article1{
+    color:rgb(160,101,2);
+    background-color:rgb(224,188,97);
+}
+.darkTheme .article2{
+    color:rgb(224,188,97);
+    background-color:rgb(160,101,2);
+}
+.darkTheme .articleStart{
+    color:rgb(160,101,2);
+    background-color:rgb(224,188,97);
+}
+.darkTheme input{   
+    background-color: rgb(160,101,2);
+}
+.darkTheme input:hover{
+    background-color: rgb(224,188,97);
 }
