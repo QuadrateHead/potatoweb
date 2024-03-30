@@ -8,9 +8,16 @@ header{
     position:fixed;
     top:0;
     left:0;
+    width: 100%;
 }
 main{
     padding: 0 0 0 10px; 
+    font-weight:700;
+}
+.hotbar{
+    display: flex;
+    flex-direction: column;
+    padding: 1px 0 1px 10px;   
     font-weight:700;
 }
 .info{
@@ -33,12 +40,10 @@ main{
     align-items: center;
     flex-direction: column;
     width: 175px;
-    height:main;
     text-align: center; 
 }
 h1{
     font-size:50px;
-    margin: 35px 8px 0px 0px; 
 }
 h2{
     font-size:30px;
@@ -63,12 +68,19 @@ a:hover{
 }
 a{
     font-size:20px;
+    font-weight: 700;
     text-decoration: none;
     font-family: 'Roboto', sans-serif; 
 }
 .headerfooter{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .footerp {
     padding-left: 7px;
@@ -106,28 +118,49 @@ nav{
 #Potato{
     font-size:50px;
     padding: 10px;
-    text-align: center; 
 }
 .citate{
     font-size: 22px;
 }
-input{
+button{
     border-radius: 25%;
     width: 50px;
     height: 50px;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-input:hover{
+button:hover{
     border-radius: 25%;
     width: 50px;
     height: 50px;
     border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .theme{
     display: flex;
     align-items: center;
     margin-top:5px;
     margin-right: 5px;
+    
+}
+.moon{
+    width: 120%;
+    
+}
+.sun{
+    width: 120%;
+}
+.skazka{
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    
 }
 
 
@@ -166,11 +199,18 @@ input:hover{
     color:rgb(224,188,97);
     background-color:rgb(160,101,2);
 }
-.lightTheme input{
+.lightTheme .hotbar{
+    color:rgb(224,188,97);
+    background-color:rgb(160,101,2);
+}
+.lightTheme button{
     background-color: rgb(224,188,97);
 }
-.lightTheme input:hover{
+.lightTheme button:hover{
     background-color: rgb(160,101,2);
+}
+.lightTheme .sun{
+    display: none;
 }
 
 
@@ -181,6 +221,7 @@ input:hover{
 .darkTheme .anew{
     color:rgb(160,101,2);
     background-color:rgb(224,188,97);
+
 }
 .darkTheme .anew:hover{
     color:rgb(224,188,97);
@@ -209,9 +250,75 @@ input:hover{
     color:rgb(160,101,2);
     background-color:rgb(224,188,97);
 }
-.darkTheme input{   
+.darkTheme .hotbar{
+    color:rgb(160,101,2);
+    background-color:rgb(224,188,97);
+}
+.darkTheme button{   
     background-color: rgb(160,101,2);
 }
-.darkTheme input:hover{
+.darkTheme button:hover{
     background-color: rgb(224,188,97);
+}
+.darkTheme .moon{
+    display: none;
+}
+/* телефоны горизонтально */
+@media (max-width: 767px) {
+
+}
+
+/* телефоны вертикально */
+@media (min-width:390px) and (max-width: 480px) {
+    .headerfooter{
+        flex-direction: column;
+        justify-content: center;
+        width: 400px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .logoimg{
+        width: 120px;
+        height: 80px;
+    }
+    .img{
+        display: none;
+    }
+    .theme{
+        margin-left: 5px;
+    }
+    article{
+        width: 390px;
+    }
+    main{
+        padding: 0;
+        flex-direction: column;
+    }
+    .news{
+        flex-direction: column;
+        width: 390px;
+    }
+    header{
+        width: 400px;
+    }
+    .contacs{
+        margin-right:0;
+        margin-left:0;
+    }
+    .anew{
+        width: 90px;
+        flex-direction: row;
+    }
+    .img2{
+        width: 75%;
+        height: 75%;
+    }
+    #Potato{
+        font-size: 30px;
+    }
+    .new{
+        flex-direction: row;
+    }
+    
 }
