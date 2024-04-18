@@ -5,23 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Новость дня by PotatoWeb</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </head>
 <body class = "body lightTheme">
     <header>
         <div class = "headerfooter">
             <div class = "logo">
-                <img width="220px" height="120px" src="images/d8e8f787-67de-4637-8de5-2d47d7089358.png">
+                <img width="220px" height="120px" src="images/d8e8f787-67de-4637-8de5-2d47d7089358.png" class = "logoimg">
                 <h1>Картофель</h1>
             </div>
-            <a href="about.html" style = "margin-top: 15px;">О Нас(как будто я не один)</a>
-            <div class = "theme">
-                <button class = "themeButton">
-                    <img src = "images/moon.png" class = "moon">
-                    <img src = "images/sun.png" class = "sun">
-                </button>
-                    
-            </div>   
+            <div class = "logo">
+                <a href="about.html" style = "margin-top: 12px;">О Нас(как будто я не один)</a>
+                <div class = "theme">
+                    <button class = "themeButton">
+                        <img src = "images/moon.png" class = "moon">
+                        <img src = "images/sun.png" class = "sun">
+                    </button>              
+                </div>  
+            </div>                  
         </div>
+        
     </header>
     <article class = "articleStart">
         <h2>Можно ли отравиться картошкой? 7 неожиданных фактов, которые вы о ней не знали</h2>
@@ -122,7 +128,7 @@
                 
             </article>
         </div> 
-        <section class = "news" >
+        <section class = "news nonews" id = "News">
             <h2>Новости</h2>
             <a href = "index.html" class = "anew">Всё о картофеле, основная страница</a>
             <a href = "New2" class = "anew">Картофель вылечил человека от рака...</a>

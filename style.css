@@ -269,7 +269,7 @@ button:hover{
 }
 
 /* телефоны вертикально */
-@media (min-width:390px) and (max-width: 480px) {
+@media (min-width:360px) and (max-width: 480px) {
     .headerfooter{
         flex-direction: column;
         justify-content: center;
@@ -289,7 +289,7 @@ button:hover{
         margin-left: 5px;
     }
     article{
-        width: 390px;
+        width: 400px;
     }
     main{
         padding: 0;
@@ -297,10 +297,13 @@ button:hover{
     }
     .news{
         flex-direction: column;
-        width: 390px;
+        width: 400px;
     }
     header{
-        width: 400px;
+        width: main;
+    }
+    footer{
+        width: main;
     }
     .contacs{
         margin-right:0;
@@ -320,5 +323,4 @@ button:hover{
     .new{
         flex-direction: row;
     }
-    
 }
